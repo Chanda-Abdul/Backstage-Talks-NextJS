@@ -1,0 +1,53 @@
+
+
+{
+  "record": [{
+    "id": "6",
+    "img": "cover_issue_6.png",
+    "available": true,
+    "linkToBuy": "https://brot.sk/products/backstage-talks-issue-6?_pos=2&_sid=1c5730cc8&_ss=r",
+    "linkColor": "--fugative-flamingo",
+    "backgroundColor":"--milk"
+  },{
+    "id": "5",
+    "img": "cover_issue_5.png",
+    "available": true,
+    "linkToBuy": "",
+    "linkColor": "--milk",
+    "backgroundColor":"--turquoise-surf"
+
+  }
+  ,{
+    "id": "4",
+    "img": "cover_issue_4.png",
+    "available": false,
+    "linkToBuy": "",
+    "linkColor": "--milk",
+    "backgroundColor":"--glorious-sunset"
+  }
+  ,{
+    "id": "3",
+    "img": "cover_issue_3.png",
+    "available": true,
+    "linkToBuy": "",
+    "linkColor": "--milk",
+    "backgroundColor":"--marigold"
+  }
+  ,{
+    "id": "2",
+    "img": "cover_issue_2.png",
+    "available": true,
+    "linkToBuy": "",
+    "linkColor": "--milk",
+    "backgroundColor":"--sapphire-splendour"
+  }
+  ,{
+    "id": "1",
+    "img": "cover_issue_1.png",
+    "available": false,
+    "linkToBuy": "",
+    "linkColor": "--milk",
+    "backgroundColor":"--velvet-cherry"
+  }]
+ 
+}

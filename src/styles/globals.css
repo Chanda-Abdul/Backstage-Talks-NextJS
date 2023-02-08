@@ -1,76 +1,19 @@
+@import url(https://fonts.bunny.net/css?family=roboto:400,500,700);
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: 'Roboto Mono', sans-serif;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+  --ink-black: hsl(338, 12%, 13%);
+  --milk: hsl(0, 0%, 100%);
+  --fugative-flamingo: hsl(327, 71%, 65%);
+  --velvet-cherry: hwb(356 2% 12%);
+  --turquoise-surf: hsl(176, 100%, 38%);
+  --glorious-sunset: hsl(20, 100%, 55%);
+  --marigold: hsl(45, 100%, 50%);
+  --sapphire-splendour: hsl(227, 73%, 42%);
 }
 
 * {
@@ -86,22 +29,131 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-mono);
+  color: var(--milk);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  /* background: var(--background-end-rgb); */
 }
 
 a {
-  color: inherit;
+  color: var(--fugative-flamingo);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+ul {
+  list-style: none;
+}
+
+img.logo {
+  width: 260px;
+  /* height: auto; */
+  border: 0;
+}
+
+.header {
+  vertical-align: middle;
+  margin: 1rem;
+}
+
+.contact,
+.menu {
+  display: none;
+}
+
+img.cover {
+  width: 80vw;
+  max-width: 420px;
+  height: auto;
+}
+p{
+  color: var(--ink-black);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+h2 {
+  /* font-size: 18px; */
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+h3 {
+  /* font-size: 18px; */
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h3 a {
+  text-transform: uppercase;
+}
+
+h5{  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5rem;}
+.avail {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  padding-top: 3px;
+  line-height: 22px;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 10rem;
+  transition: background-color 400ms ease-in-out;
+}
+
+footer{background-color: var(--velvet-cherry);}
+.footer .description {
+  margin: 0;
+  /* position: relative;
+  left: auto;
+  bottom: auto;
+  width: auto; */
+  width: 100%;
+  height: 100%; 
+  padding: 1rem 1rem .5rem 1rem;
+}
+
+.footer  h5 {
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.copyright h4 {
+  font-size: 12px;
+  font-weight: 400;
+  
+  margin-bottom: 50px;
+}
+footer a{
+  text-decoration: underline;
+  /* width: 100%; */
+}
+
+/* footer * {
+  width: 100%;
+  margin-bottom: .5rem;
+} */
+
+.link2{
+  text-decoration: none;
+}
+
+.link2:hover{
+  text-decoration: underline;
 }

@@ -1,38 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Backstage Talks (Magazine archive)
+![Design preview for the Backstage Talks (Magazine archive) coding challenge](https://www.frontendpractice.com/_next/image?url=%2Ffullsize%2FC1-Backstage-Talks.png&w=1200&q=90)
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This is a solution to the [Backstage Talks(Magazine archive) ](https://www.frontendpractice.com/projects/backstage-talks )challenge on [Frontend Practice](https://www.frontendpractice.com/).  
+# Frontend Practice - Backstage Talks (Magazine archive) challenge
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### The Challenge
+Code a pixel perfect replication of the [Backstage Talks
+(Magazine archive)](https://backstagetalks.com/)  site created by [studio Milk](https://www.milk.sk/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![preview for the Backstage Talks
+(Magazine archive) coding challenge](https://www.frontendpractice.com/_next/image?url=%2Ffullsize%2FC1-Backstage-Talks.png&w=1200&q=90)
 
-## Learn More
+### Users Should be able to: 
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] View the optimal layout for the interface depending on their device's screen size
+  - [ ] Mobile @ `375px`
+  - [ ] Tablet/Desktop @ `768px`
+- [ ] See animations for all animated elements on the page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Solution URL: [here](https://github.com/Chanda-Abdul/Backstage-Talks-NextJS) | Live Site URL: 
+<!-- [Add live site URL here](https://your-live-site-url.com) -->
 
-## Deploy on Vercel
+#
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
+<details>
+<summary><b> Mobile Screenshots @ 375px</b></summary>
+<img src="src/assets/screens/mobile_booking_confirm.png"  width="375px"/>
+</details>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## My process
+<!-- - Mobile
+  - Drop down Navigation, using
+  TO-DO => add loader `<MobileDropdownMenuComponent/>` -->
+    
+  <!-- TO-DO => add background overlay when nav isOpen -->
+  <!-- TO-DO => animations for dropdown -->
+  <!-- - `/home` page
+  - `/food` page - `/retail` page- `/features` page-->
+  <!-- TO-DO => Review styles -->
+  <!-- TO-DO => add animations -->
+  
+  <!-- TO-DO => Review styles -->
+  <!-- TO-DO => add animations -->
+  
+  <!-- TO-DO => Review styles -->
+  <!-- TO-DO => add animations  - `/feature/:id` page
+    
+  - `/about` page-->
+ <!-- TO-DO => create model -->
+<!-- TO-DO => update routes -->
+ <!-- TO-DO => Review styles -->
+<!-- TO-DO => add animations -->
+  <!-- TO-DO =>  - `/become-a-vendor` pageadd copy & styles? leads to /home so close nav -->
+ 
+<!-- TO-DO => Review styles -->
+<!-- TO-DO => add animations -->
+<!-- TO-DO => add vendor form close functionality -->
+<!-- - Angular Reactive Form -->
+<!-- TO-DO => add form functionality -->
+ <!-- TO-DO => update favicon -->
+  <!-- TO-DO => add animations -->
+<!-- TO-DO => attribution layout -->
+<!-- TO-DO => Newletter signup -->
+<!-- - Desktop -->
+  <!-- - Vertical Slider Panel Navigation using `<DesktopVerticalMenuComponent/>` -->
+  <!-- TO-DO => update Vertical panel -->
+  <!-- TO-DO => Review styles -->
+  <!-- TO-DO => add animations -->
+  
+<!-- TO-DO => accessibilty -->
+<!-- TO-DO => polish & deploy-->
+
+
+### Built with
+<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="NextJS icon" height="30" /> <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="React styled components icon" height="30" />  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React icon" height="30" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS icon" height="30" />  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="Sass icon" height="30" /> 
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript icon" height="30" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript icon" height="30" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML icon" height="30" />
+ <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify icon" height="30" />
+
+
+## What I learned
+- Next.js
+
+## Continued development
+
+## Useful resources
+-  [Next.js Documentation](https://nextjs.org/docs) - learn about <b>Next.js</b> features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive <b>Next.js</b> tutorial.
+- [HTML Links - Create Bookmarks](https://www.w3schools.com/html/html_links_bookmarks.asp) - Bookmarks can be useful if a web page is very long. To create a bookmark - first create the bookmark, then add a link to it.  When the link is clicked, the page will scroll down or up to the location with the bookmark.
+- [position: fixed](https://www.w3schools.com/css/css_positioning.asp#:~:text=An%20element%20with%20position%3A%20fixed,would%20normally%20have%20been%20located.) - An element with `position: fixed;` is positioned `relative` to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.  A fixed element does not leave a gap in the page where it would normally have been located.
+- [Practical CSS Scroll Snapping](https://css-tricks.com/practical-css-scroll-snapping/) - CSS scroll snapping allows you to lock the viewport to certain elements or locations after a user has finished scrolling. 
