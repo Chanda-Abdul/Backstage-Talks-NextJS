@@ -98,3 +98,10 @@ Solution URL: [here](https://github.com/Chanda-Abdul/Backstage-Talks-NextJS) | L
 - [HTML Links - Create Bookmarks](https://www.w3schools.com/html/html_links_bookmarks.asp) - Bookmarks can be useful if a web page is very long. To create a bookmark - first create the bookmark, then add a link to it.  When the link is clicked, the page will scroll down or up to the location with the bookmark.
 - [position: fixed](https://www.w3schools.com/css/css_positioning.asp#:~:text=An%20element%20with%20position%3A%20fixed,would%20normally%20have%20been%20located.) - An element with `position: fixed;` is positioned `relative` to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.  A fixed element does not leave a gap in the page where it would normally have been located.
 - [Practical CSS Scroll Snapping](https://css-tricks.com/practical-css-scroll-snapping/) - CSS scroll snapping allows you to lock the viewport to certain elements or locations after a user has finished scrolling. 
+- [How to fade in content as it scrolls into view](https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4) - make content fade in as you scroll into the view. 
+- [Revisiting prefers-reduced-motion, the reduced motion media query](https://css-tricks.com/revisiting-prefers-reduced-motion/) -  The article provided some background about `prefers-reduced-motion`, a media query introduced to help people with vestibular and seizure disorders use the web to avoid creating disability-triggering visual effects.
+
+
+
+
+###### `npx create-next-app@latest --experimental-app`
