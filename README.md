@@ -19,8 +19,10 @@ Code a pixel perfect replication of the [Backstage Talks
 ### Users Should be able to: 
 
 - [ ] View the optimal layout for the interface depending on their device's screen size
-  - [ ] Mobile @ `375px`
+  - [x] Mobile @ `375px`
+    - [x] BONUS: implement Scroll Snapping to optimize mobile user experience
   - [ ] Tablet/Desktop @ `768px`
+    - [x] HTML bookmark navigation links
 - [ ] See animations for all animated elements on the page
 
 #
@@ -38,44 +40,13 @@ Solution URL: [here](https://github.com/Chanda-Abdul/Backstage-Talks-NextJS) | L
 
 
 ## My process
-<!-- - Mobile
-  - Drop down Navigation, using
-  TO-DO => add loader `<MobileDropdownMenuComponent/>` -->
-    
-  <!-- TO-DO => add background overlay when nav isOpen -->
-  <!-- TO-DO => animations for dropdown -->
-  <!-- - `/home` page
-  - `/food` page - `/retail` page- `/features` page-->
+<!--
   <!-- TO-DO => Review styles -->
   <!-- TO-DO => add animations -->
-  
-  <!-- TO-DO => Review styles -->
-  <!-- TO-DO => add animations -->
-  
-  <!-- TO-DO => Review styles -->
-  <!-- TO-DO => add animations  - `/feature/:id` page
-    
-  - `/about` page-->
- <!-- TO-DO => create model -->
-<!-- TO-DO => update routes -->
- <!-- TO-DO => Review styles -->
-<!-- TO-DO => add animations -->
-  <!-- TO-DO =>  - `/become-a-vendor` pageadd copy & styles? leads to /home so close nav -->
- 
-<!-- TO-DO => Review styles -->
-<!-- TO-DO => add animations -->
-<!-- TO-DO => add vendor form close functionality -->
-<!-- - Angular Reactive Form -->
-<!-- TO-DO => add form functionality -->
- <!-- TO-DO => update favicon -->
-  <!-- TO-DO => add animations -->
-<!-- TO-DO => attribution layout -->
-<!-- TO-DO => Newletter signup -->
-<!-- - Desktop -->
-  <!-- - Vertical Slider Panel Navigation using `<DesktopVerticalMenuComponent/>` -->
-  <!-- TO-DO => update Vertical panel -->
-  <!-- TO-DO => Review styles -->
-  <!-- TO-DO => add animations -->
+  <!-- TO-DO => add dynamic class to body according to which issue is being viewed, to update background color and animation color transition -->
+  <!-- TO-DO => organize components? -->
+<!-- TO-DO => HTML bookmark nav /router params -->
+
   
 <!-- TO-DO => accessibilty -->
 <!-- TO-DO => polish & deploy-->
@@ -89,6 +60,7 @@ Solution URL: [here](https://github.com/Chanda-Abdul/Backstage-Talks-NextJS) | L
 
 ## What I learned
 - Next.js
+- Practice Animations
 
 ## Continued development
 
