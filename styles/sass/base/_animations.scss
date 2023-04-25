@@ -1,9 +1,9 @@
 body {
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: background-color 500ms ease-out 200ms;
-    -moz-transition: background-color 500ms ease-out 200ms;
-    -o-transition: background-color 500ms ease-out 200ms;
-    transition: background-color 500ms ease-out 200ms;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: background-color 500ms ease-out 200ms;
+  -moz-transition: background-color 500ms ease-out 200ms;
+  -o-transition: background-color 500ms ease-out 200ms;
+  transition: background-color 500ms ease-out 200ms;
 }
 
 html {
@@ -11,12 +11,12 @@ html {
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
   transform: translate3d(0px, 0px, 0px);
-  transition: background-color 1000ms ease-out;
+  transition: opacity 1200ms ease-in, transform 1200ms ease-in,
+    visibility 1200ms ease-in, background-color 5000ms ease-out;
 }
 
 /* TO-DO => transition page color, not section color*/
 
-/* TO-DO => snap for mobile, fluid for desktop bc of UX */
 .fade-in-section {
   // opacity: 0;
   // transform: translateY(0vh);
@@ -43,25 +43,20 @@ html {
 section {
   position: relative;
   transform: translate3d(0px, 0px, 0px);
-  transition: all 7s ease 2s;
-  transition: background-color 5s ease-out;
-  will-change: background-color;
-
-  // &:not(:last-of-type) {
-    scroll-snap-align: start;
-    // 
-    // 
-    // 
-    // scroll-snap-align: start;
-    /*  */
-    /* position: relative; */
-    /*  */
-  // }
-
-  // &:last-of-type,
- 
+  transition: all 3s ease-in 1s;
+  // transition: background-color 2s ease-out;
+  // will-change: background-color;
+  scroll-snap-align: start;
 }
 
 .footer {
-    scroll-snap-align: end;
+  scroll-snap-align: end;
+}
+
+
+@media only screen and (min-width: $break-point-large) {
+  html {
+    scroll-snap-type: none;
+    scroll-snap-align: none
   }
+}

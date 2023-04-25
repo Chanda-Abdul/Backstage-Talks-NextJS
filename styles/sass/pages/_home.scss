@@ -24,3 +24,20 @@ ul {
 a {
     text-decoration: none;
 }
+
+.container {
+    min-height: 100%;
+    position: relative;
+  
+      background-color: var(--milk);
+  }
+  
+  
+  
+  .backToHome {
+    text-align: right;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    margin: 0 2rem 0 0;
+  }

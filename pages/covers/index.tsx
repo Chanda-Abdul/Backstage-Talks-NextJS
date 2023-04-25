@@ -30,11 +30,14 @@ export default function CoversPage() {
   if (error) return <div>{error.message}</div>;
   if (isLoading) return <div>Loading...</div>;
   if (!data) return null;
+  console.log(typeof data);
+  // const cover = <data[]>;
+  // console.log(cover);
   // console.log('COVERS', covers);
   return (
     <RootLayout>
       <div className='cover'>
-        {data.map((data) => {
+        {(data).map((data:Cover) => {
           return (
             <section
               key={`issue${data.id}`}

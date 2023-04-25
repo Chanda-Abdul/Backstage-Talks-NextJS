@@ -5,10 +5,9 @@ import type { Cover, ResponseError } from '../../../interfaces'
 export default function coverHandler(
   _req: NextApiRequest,
 
-  res: NextApiResponse<Cover>
+  res: NextApiResponse<Cover | ResponseError> 
 ) {
-  //  
-  // return res.status(200).json(covers)
+
   const { query } = _req
   const { id } = query
   console.log("covers api", covers);

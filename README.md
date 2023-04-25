@@ -18,12 +18,27 @@ Code a pixel perfect replication of the [Backstage Talks
 
 ### Users Should be able to: 
 
-- [ ] View the optimal layout for the interface depending on their device's screen size
+- [x] View the optimal layout for the interface depending on their device's screen size
   - [x] Mobile @ `375px`
     - [x] BONUS: implement Scroll Snapping to optimize mobile user experience
-  - [ ] Tablet/Desktop @ `768px`
-    - [x] HTML bookmark navigation links
+  - [x] Tablet/Desktop @ `900px`
+    - [ ] HTML bookmark navigation links
 - [ ] See animations for all animated elements on the page
+
+  <!-- TO-DO =>  animations - transition page color, not section color - add dynamic class to body according to which issue is being viewed, to update background color and animation color transition -->
+
+
+<!-- TO-DO => organize components - move to cover covers-->
+<!-- TO-DO => anchor - HTML bookmark nav /router params, make anchors appear on scroll, go to anchor on link click -->
+<!-- TO-DO => footer - update active cover link styling -->
+<!-- TO-DO => footer - desktop should be fixed position on desktop -->
+<!-- TO-DO => connect custom 404 page -->
+
+<!-- TO-DO => Fix Type error: Property 'map' does not exist on type 'Cover'. -->
+
+<!-- TO-DO => accessibilty -->
+<!-- TO-DO => polish & build, deploy-->
+
 
 #
 
@@ -40,24 +55,11 @@ Solution URL: [here](https://github.com/Chanda-Abdul/Backstage-Talks-NextJS) | L
 
 
 ## My process
-<!--
-  <!-- TO-DO => Review styles -->
-  <!-- TO-DO => add animations -->
-  <!-- TO-DO => add dynamic class to body according to which issue is being viewed, to update background color and animation color transition -->
-  <!-- TO-DO => organize components? -->
-<!-- TO-DO => HTML bookmark nav /router params -->
 
-  
-<!-- TO-DO => accessibilty -->
-<!-- TO-DO => polish & deploy-->
 
 
 ### Built with
-<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="NextJS icon" height="30" /> 
-<!-- <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="React styled components icon" height="30" />   -->
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React icon" height="30" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS icon" height="30" />  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="Sass icon" height="30" /> 
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript icon" height="30" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript icon" height="30" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML icon" height="30" />
- <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify icon" height="30" />
+<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="NextJS icon" height="30" /><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React icon" height="30" /><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS icon" height="30" /> <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="Sass icon" height="30" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript icon" height="30" /><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript icon" height="30" /><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML icon" height="30" /><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify icon" height="30" />
 
 
 ## What I learned
