@@ -1,15 +1,15 @@
 .container {
-  height: 100vh;
+  min-height: 100%;
   position: relative;
   //   display: flex;
   //   flex-direction: row;
   //   justify-content: space-between;
-  //   background-color: $milk;
+    background-color: var(--milk);
 }
 
 // .header {
 
-//   padding: 1.25rem 1rem;
+//   padding: 1.25rem 1.6rem;
 //   /* scroll-snap-align: start; */
 //   text-align: center;
 //   

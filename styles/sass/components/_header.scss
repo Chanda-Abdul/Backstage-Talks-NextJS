@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  @include flex(row, space-between, left);
+  background-color: transparent;
+  padding: 0 1.6rem;
+  text-align: left;
+  @include heading-tertiary;
+
+  &__logo {
+    width: 16rem;
+    height: auto;
+    border: 0;
+    padding-top: 2rem;
+  }
+
+  &__contact {
+    display: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: $break-point-large) {
+  .header {
+    @include flex(row, space-between, center);
+    margin: 0;
+
+    &__logo {
+      width: 26rem;
+      height: auto;
+    }
+
+    &__contact {
+      color: var(--ink-black);
+      font-size: 1.8rem;
+      display: block;
+    }
+  }
+}

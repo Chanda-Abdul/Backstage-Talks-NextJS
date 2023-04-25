@@ -1,0 +1,67 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: background-color 500ms ease-out 200ms;
+    -moz-transition: background-color 500ms ease-out 200ms;
+    -o-transition: background-color 500ms ease-out 200ms;
+    transition: background-color 500ms ease-out 200ms;
+}
+
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  transform: translate3d(0px, 0px, 0px);
+  transition: background-color 1000ms ease-out;
+}
+
+/* TO-DO => transition page color, not section color*/
+
+/* TO-DO => snap for mobile, fluid for desktop bc of UX */
+.fade-in-section {
+  // opacity: 0;
+  // transform: translateY(0vh);
+  // visibility: hidden;
+  // transition: opacity 1200ms ease-in, transform 1200ms ease-in,
+  //   visibility 1200ms ease-in;
+  // will-change: opacity, transform, visibility;
+  // z-index: -1;
+  /* height: 100vh;
+    width: 100vw; */
+
+  /* position: absolute; top: 0; , background-colorbackground-color visibility 1200ms ease-in-out
+    */
+}
+
+.fade-in-section.is-visible {
+  // opacity: 1;
+  // transform: none;
+  // visibility: visible;
+  // z-index: -1;
+}
+
+
+section {
+  position: relative;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 7s ease 2s;
+  transition: background-color 5s ease-out;
+  will-change: background-color;
+
+  // &:not(:last-of-type) {
+    scroll-snap-align: start;
+    // 
+    // 
+    // 
+    // scroll-snap-align: start;
+    /*  */
+    /* position: relative; */
+    /*  */
+  // }
+
+  // &:last-of-type,
+ 
+}
+
+.footer {
+    scroll-snap-align: end;
+  }

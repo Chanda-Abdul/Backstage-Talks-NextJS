@@ -1,12 +1,12 @@
-import Layout from '@/components/layout';
+import Layout from '@/pages/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import type { Cover, ResponseError } from '../../interfaces';
-// import styles from '../../styles/globals.scss'
 
 const fetcher = async (url: string) => {
+  // console.log('url', url)
   const res = await fetch(url);
   const data = await res.json();
 
@@ -29,63 +29,64 @@ export default function CoverPage() {
 
   return (
     <>
-      <Layout>
-        <section
-          className={`section${data.id}`}
-          data-anchor={`issue${data.id}`}
-          id={`issue${data.id}`}
-          data-color={`${data.background_color}`}
-          style={{
-            backgroundColor: `${data.background_color}`,
-          }}
-        >
-          <Image
-            src={`/images/${data.img}`}
-            alt={`Backstage talks Issue ${data.id}`}
-            className='cover'
-            width={450}
-            height={450}
-          />
+      <section
+        className={`section${data.id}`}
+        data-anchor={`issue${data.id}`}
+        id={`issue${data.id}`}
+        data-color={`var(--${data.background_color})`}
+        style={{
+          backgroundColor: `var(--${data.background_color})`,
+        }}
+      >
+        <Image
+          src={`/images/${data.img}`}
+          alt={`Backstage talks Issue ${data.id}`}
+          className='cover__image'
+          width={450}
+          height={450}
+        />
 
-          <h2>
+        <div className='cover__status'>
+          <h1 className='cover__status--title'>
             Issue #{data.id} {!data.available_for_purchase && <> is sold out</>}
-          </h2>
+          </h1>
+          <span className='cover__status--buy'>
+            {' '}
+            {data.available_for_purchase && (
+              <Link
+                href={`${data.link_to_purchase}`}
+                target='_blank'
+                rel='noreferrer'
+                style={{
+                  color: `${data.link_color}`,
+                }}
+              >
+                BUY HERE
+              </Link>
+            )}
+          </span>
+        </div>
 
-          {data.available_for_purchase && (
-            <div>
-              <p className='avail'>
+        <div  className='cover__status--cta'>
+                {data.available_for_purchase && <>or in </>}
+                {!data.available_for_purchase && (
+                  <>
+                    If you are lucky, you may get the last pieces in <br />
+                  </>
+                )}
                 <Link
-                  href={`${data.link_to_purchase}`}
+                  href='http://backstagetalks.com/stocklist.php'
                   target='_blank'
                   rel='noreferrer'
                   style={{
                     color: `${data.link_color}`,
                   }}
                 >
-                  BUY HERE
+                  selected stores
                 </Link>
-              </p>
-            </div>
-          )}
-          <p className='avail'>
-            {data.available_for_purchase && <>or in </>}
-            {!data.available_for_purchase && (
-              <>If you are lucky, you may get the last pieces in </>
-            )}
-            <Link
-              href='http://backstagetalks.com/stocklist.php'
-              target='_blank'
-              rel='noreferrer'
-              style={{
-                color: `${data.link_color}`,
-              }}
-            >
-              selected stores
-            </Link>
-            .
-          </p>
-        </section>
-      </Layout>
+                .
+              </div>
+      </section>
     </>
   );
 }

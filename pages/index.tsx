@@ -1,13 +1,8 @@
 import Head from 'next/head';
 import useSWR from 'swr';
-// import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.scss';
 import { Cover } from '@/interfaces';
-import CoverComponent from '@/components/Cover';
-import Layout from '@/components/Layout';
-import CoversComponent from '@/components/Covers';
-
-// const inter = Inter({ subsets: ['latin'] })
+import CoversPage from './covers';
+import RootLayout from './layout';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -17,19 +12,13 @@ export default function Home() {
   if (error) return <div>Failed to load</div>;
   if (isLoading) return <div>Loading...</div>;
   if (!data) return null;
-console.log('index- data' , data)
+  
+  // console.log('Home page', data);
   return (
     <>
-      <Head>
-        <title>Backstage Talks | Magazine Archive</title>
-        <meta name='description' content='' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Layout>
-      <CoversComponent covers={data}/> 
-     
-      </Layout>
-  </>
+      {/* <RootLayout> */}
+        <CoversPage covers={data} />
+      {/* </RootLayout> */}
+    </>
   );
 }

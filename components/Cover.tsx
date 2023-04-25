@@ -1,4 +1,3 @@
-// import CoverPage from '@/pages/cover/[id]'
 import Link from 'next/link'
 import { Cover } from '../interfaces'
 
@@ -7,12 +6,14 @@ type CoverProps = {
 }
 
 export default function CoverComponent({ cover }: CoverProps) {
+  
+  console.log(cover, cover.id);
   return (
-    <li>
+    <>
       {/* <CoverPage/> */}
-      <Link href="/cover/[id]" as={`/cover/${cover.id}`}>
+      <Link href={`/covers/#issue${cover.id}`} as={`/covers/#issue${cover.id}`} >
         {cover.title}
       </Link>
-    </li>
+    </>
   )
 }

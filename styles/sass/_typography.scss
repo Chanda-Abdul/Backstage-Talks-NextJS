@@ -1,0 +1,49 @@
+@import url(https://fonts.bunny.net/css?family=roboto:400,500,600,700);
+
+$font-default: 'Roboto', sans-serif;
+
+@mixin heading-primary {
+    font-family: $font-default;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+}
+
+@mixin heading-secondary {
+    @include heading-primary;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: .3rem 1.5rem 0;
+    margin: 0 0 1.5rem;
+
+    & a {
+        text-transform: uppercase;
+    }
+}
+
+@mixin heading-tertiary {
+    @include heading-primary;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+}
+
+
+@mixin body-text-primary {
+    font-family: $font-default;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+@mixin body-text-secondary {
+    @include body-text-primary;
+    font-size: 1.2rem;
+
+    & a,
+    &a:active,
+    &a:visited {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
